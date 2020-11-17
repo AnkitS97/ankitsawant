@@ -1,3 +1,4 @@
+import { DialogModule } from 'primeng/dialog';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,7 @@ import { ProjectsComponent } from './projects/projects.component';
     ProjectsComponent
   ],
   imports: [
+    DialogModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule

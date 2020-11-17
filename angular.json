@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "resume-portfolio"
+  "defaultProject": "resume-portfolio",
+  "cli": {
+    "analytics": false
+  }
 }
