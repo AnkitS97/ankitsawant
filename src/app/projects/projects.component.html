@@ -1,34 +1,39 @@
-<div class="card card-container">
-  <div class="card-body">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card text-center project">
-          <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card text-center project" (click)="showDialog()">
+      <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
+      <div class="card-body">
+        <h5 class="card-title">Project 1</h5>
       </div>
-      <div class="col-sm-4">
-        <div class="card text-center project">
-          <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card text-center project">
-          <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-          </div>
-        </div>
-      </div>
-
     </div>
-
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-center project" (click)="showDialog()">
+      <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
+      <div class="card-body">
+        <h5 class="card-title">Project 2</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-center project" (click)="showDialog()">
+      <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
+      <div class="card-body">
+        <h5 class="card-title">Project 3</h5>
+      </div>
+    </div>
   </div>
 
 </div>
 
+<p-dialog [(visible)]="display" closable="true" modal="modal" [draggable]="false" [resizable]="false"
+  [responsive]="true" [style]="{width: '500px'}" [dismissableMask]="true" >
+  <p-header>
+    Project 1
+    
+  </p-header>
+  <div class="mx-auto image">
+    <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
+  </div>
+  Details of project 1
+</p-dialog>

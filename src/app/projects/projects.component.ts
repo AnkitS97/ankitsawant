@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  display = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showDialog() {
+    this.display = true;
   }
 }

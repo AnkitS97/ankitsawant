@@ -8,18 +8,24 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
+import {TimelineModule} from 'primeng/timeline';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ExperienceComponent
   ],
   imports: [
     DialogModule,
     BrowserModule,
     AppRoutingModule,
+    CardModule,
+    TimelineModule,
     BrowserAnimationsModule
   ],
   providers: [],

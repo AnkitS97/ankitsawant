@@ -1,6 +1,11 @@
 .project {
   cursor: pointer;
+  z-index: 99;
   &:hover {
     background-color: rgba(0,0,0,0.1);
   }
+}
+ 
+.image {
+  width: 300px;
 }
