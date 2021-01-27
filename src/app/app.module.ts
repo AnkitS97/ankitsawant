@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import {TimelineModule} from 'primeng/timeline';
 import {CardModule} from 'primeng/card';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {CardModule} from 'primeng/card';
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SkillsComponent
   ],
   imports: [
     DialogModule,
