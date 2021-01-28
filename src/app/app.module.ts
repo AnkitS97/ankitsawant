@@ -12,6 +12,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import {TimelineModule} from 'primeng/timeline';
 import {CardModule} from 'primeng/card';
 import { SkillsComponent } from './skills/skills.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SkillsComponent } from './skills/skills.component';
     AboutComponent,
     ProjectsComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     DialogModule,

@@ -29,11 +29,16 @@
 <p-dialog [(visible)]="display" closable="true" modal="modal" [draggable]="false" [resizable]="false"
   [responsive]="true" [style]="{width: '500px'}" [dismissableMask]="true" >
   <p-header>
-    Project 1
+    {{project['projectName']}}
     
   </p-header>
   <div class="mx-auto image">
-    <img src="../../assets/images/DS-projects.png" class="card-img" alt="Project 1">
+    <img src="../../assets/images/{{project['projectImage']}}" class="card-img" alt="Project 1">
   </div>
-  Details of project 1
+  <div class="pt-3 text-center">
+    {{project['projectDesc']}}
+    <div class="pt-3">
+      <button type="button" class="btn btn-outline-primary"><a href="{{project['projectLink']}}" style="color: inherit;" target="_blank">GitHub</a></button>
+    </div>
+  </div>
 </p-dialog>
