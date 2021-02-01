@@ -14,19 +14,17 @@
   opacity: 0.7;
   line-height: 52px;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
 
   h2 {
-    font-size: 35px;
+    font-size: 3em;
   }
 
   span {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 
   p {
-    font-size: 15px;
+    font-size: 0.9em;
     line-height: 27px;
     opacity: 0.7;
     padding: 0 90px;
@@ -72,10 +70,7 @@
 }
 
 @media (max-width: map-get($grid-breakpoints, sm )) {
-  .intro {
-    margin-left: 20px;
-    margin-right: 20px;
-    
+  .intro {    
     span {
       font-size: 0.9em;
     }
